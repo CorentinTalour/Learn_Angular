@@ -1,0 +1,11 @@
+<div class="container d-flex flex-row">
+  <app-nourriture-list
+    class="flex-50 pr-10"
+    [nourritures]="nourritures"
+    (changeNourriture)="selectNourriture($event)"
+  ></app-nourriture-list>
+  <app-nourriture-details
+    class="flex-50 pr-10"
+    [nourriture]="selectNourriture"
+  ></app-nourriture-details>
+</div>

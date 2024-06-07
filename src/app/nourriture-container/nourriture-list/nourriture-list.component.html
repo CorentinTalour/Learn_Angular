@@ -1,0 +1,10 @@
+<h3 class="mb-20">Liste nourriture</h3>
+<ul class="list-primary mb-20">
+  <li
+    *ngFor="let nourriture of nourritures;let index = index"
+    (click)="selectedNourriture(index)"
+  >
+    {{ nourriture.nom }}
+  </li>
+</ul>
+<button class="btn btn-primary">Ajouter nourriture</button>
